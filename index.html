@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SPPU CGPA to Percentage Convertor</title>
+    <meta name="description" content="SPPU CGPA to Percentage Convertor">
+    <meta name="keywords" content="SPPU, CGPA, Percentage, Grade, Class, Convertor">
+    <meta name="author" content="GoravG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/png" href="./images/calculator.svg">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="topbox">
+            <div class="namediv">
+                <a href="http://www.unipune.ac.in/" target="_blank" title="Savitribai Phule Pune University">
+                    Savitribai Phule Pune University
+                </a>
+            </div>
+            <div class="addressdiv">Ganeshkhind, Maharashtra, Pune 411007</div>
+        </div>
+        <div class="mainbox">
+            <div class="title">CGPA to Percentage Convertor</div>
+            <div class="input_row">
+                <div class="input_label">
+                    Enter CGPA:
+                </div>
+                <div class="input_box">
+                    <input id="cgpa_input" type="number" min="0.00" max="10.00" step="0.01">
+                </div>
+                <div class="input_button">
+                    <button id="convert_btn" type="button" onclick="convertCGPA()">Convert</button>
+                </div>
+            </div>
+            <div id="error_msg"></div>
+            <div class="output_table">
+                <table id="opTable">
+                    <tr>
+                        <td class="col1">CGPA</td>
+                        <td id="op_cgpa">-</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Grade</td>
+                        <td id="op_grade">-</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Percentage</td>
+                        <td id="op_per">-</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Class</td>
+                        <td id="op_class">-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bottombox">
+            <div class="note">References:<a
+                    href="http://www.unipune.ac.in/Syllabi_PDF/revised-2015/engineering/UG-RULE-REGULATIONS-FOR-CREDIT-SYSTEM-2015-18June.pdf">[1]
+                </a><a
+                    href="https://campus.unipune.ac.in/CBCS/CBCS_Regulations_for_SPPU_01.09.2018_29.09.2018.pdf">[2]</a>
+            </div>
+            <div class="credits">
+                Made With ❤️ By GoravG
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
