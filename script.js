@@ -55,6 +55,8 @@ function convertCGPA() {
         cls = "Higher Second Class"
     else if (cgpa >= 5.5)
         cls = "Second Class";
+    else if (cgpa >= 4)
+        cls = "Pass Class"
     else
         cls = "Fail";
     per = per.toPrecision(5);
